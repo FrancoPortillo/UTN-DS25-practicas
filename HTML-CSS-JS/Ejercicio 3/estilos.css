@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    border-collapse: collapse;
+        margin: 10px auto;
+
+}
+td{
+    border: 2px black solid;
+    background-color: #b43232;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+.fila-dos td{
+    background-color: blue;
+}
+
+.fila-dos .primer{
+    background-color: rgb(255, 244, 30) ;
+} 
+
+.fila-tres td{
+    background-color: green;
+}
+
+.primer-ultima{
+    background-color: rgb(238, 0, 238) ;
+}
+
+.fila-tres .tersegun{
+    background-color: aqua;
+}
