@@ -12,8 +12,8 @@ table{
 td{
     border: 2px black solid;
     background-color: #b43232;
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
 }
 
 
@@ -26,14 +26,15 @@ td{
     background-color: rgb(255, 244, 30) ;
 } 
 
-.fila-tres td{
-    background-color: green;
-}
 
 .primer-ultima{
     background-color: rgb(238, 0, 238) ;
 }
 
-.fila-tres .tersegun{
+.tersegun{
     background-color: aqua;
+}
+
+.tercol {
+    background-color: rgb(0, 255, 102);
 }
