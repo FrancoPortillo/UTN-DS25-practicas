@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  width: 50%;
+  margin: auto;
+}
+
+body {
+  font-family: "Playpen Sans Deva", sans-serif;
+  background-color: #f8f9fa;
+}
+h1 {
+  font-family: "Playwrite HU", sans-serif;
+  color: #dcdf1a;
+}
+
+.body-index{
+    background-color: rgb(179, 103, 176);
+}
+
+ul{
+    margin: 0;
+    padding: 10px;
+}
