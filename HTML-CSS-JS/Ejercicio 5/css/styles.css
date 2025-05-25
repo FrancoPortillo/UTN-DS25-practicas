@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-image: url(../images/fondo-libreria.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.344);
+  z-index: 0;
+}
+
+.logo > * {
+  position: relative;
+  z-index: 1;
+}
+.imagen-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.contenido-principal {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.contenido-principal nav {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px 10px;
+  box-shadow: 2px 0 5px rgba(32, 31, 31, 0.5);
+}
+
+.contenido-principal nav ul {
+  list-style: none;
+}
+
+.contenido-principal main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.temas-principales {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.tema {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1 200px;
+  min-width: 220px;
+  max-width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.libro-destacado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.libro-destacado img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.libros-seccion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.libro {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.libro img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.libro strong {
+  font-size: 1.1em;
+}
+
+.libro span {
+  color: #555;
+  font-size: 0.95em;
+}
+
+.libro p {
+  margin-top: 8px;
+  font-size: 0.95em;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilos para el formulario de registro */
+.form-registro {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 24px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-registro label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.form-registro input[type="text"],
+.form-registro input[type="date"],
+.form-registro input[type="email"],
+.form-registro input[type="password"],
+.form-registro select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.form-registro input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 2px;
+}
+
+.form-registro button[type="submit"] {
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-registro button[type="submit"]:hover {
+  background: #40916c;
+}
+
+/* Estilos para la sección de contacto */
+.datos-contacto {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 500px;
+}
+
+.form-contacto {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding: 24px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-contacto label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.form-contacto input[type="text"],
+.form-contacto input[type="email"],
+.form-contacto input[type="tel"],
+.form-contacto textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.form-contacto textarea {
+  resize: vertical;
+}
+
+.form-contacto button[type="submit"] {
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-contacto button[type="submit"]:hover {
+  background: #40916c;
+}
+
+/* Estilos para redes sociales en el footer */
+footer .social-media a {
+  margin: 0 6px;
+  color: #2d6a4f;
+  text-decoration: none;
+}
+
+footer .social-media a:hover {
+  text-decoration: underline;
+}
